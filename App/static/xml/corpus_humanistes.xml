@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Diverses corresponces humanistes</title>
+            <respStmt>
+               <resp>Encodage réalisé par Soline Doat</resp>
+               <name>Soline Doat</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>École nationale des chartes</distributor>
+            <date>2022</date>
+            <availability status="restricted">
+               <p>La réutilisation des données n'est pas autorisée sans l'accord de l'auteur</p>
+            </availability>
+            <distributor>École nationale des chartes, Master 2 Technologies numériques appliquées à
+               l'histoire </distributor>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Les transcriptions sont effectuées à partir d'édition libres de droit :
+               https://archive.org/details/cu31924026502793/page/n49/mode/2up</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Cette application est développée dans le cadre des enseignements du Master «
+               Technologies numériques appliquées à l'histoire » de l'ENC</p>
+            <p>Explication : les correspondances sont encodées dans un fichier XML-TEI. PUIS....</p>
+         </projectDesc>
+         <samplingDecl>
+            <p>Échantillon de correspondances.</p>
+         </samplingDecl>
+      </encodingDesc>
+
+
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="More">
+                  <persName xml:lang="fr">Thomas More</persName>
+                  <birth when="1478-02-07"/>
+                  <death when="1535-07-06"/>
+                  <ptr type="furtherInfo" target="/wiki/Thomas_More"/>
+                  <ptr type="wikidata" target="Q42544"/>
+                  <graphic url="More.jpg"/>
+               </person>
+               <person xml:id="Erasme">
+                  <persName xml:lang="fr">Erasme de Rotterdam</persName>
+                  <birth when="1466-10-27"/>
+                  <death when="1536-07-12"/>
+                  <ptr type="furtherInfo" target="/wiki/%C3%89rasme"/>
+                  <ptr type="wikidata" target="Q43499"/>
+                  <graphic url="Erasme.jpg"/>
+               </person>
+               <person xml:id="Melanchton">
+                  <persName xml:lang="fr">Philippe Mélanchton</persName>
+                  <birth when="1497-02-16"/>
+                  <death when="1560-04-19"/>
+                  <ptr type="furtherInfo" target="/wiki/Philippe_M%C3%A9lanchthon"/>
+                  <ptr type="wikidata" target="Q76325"/>
+                  <graphic url="Melanchton.jpg"/>
+               </person>
+               <person xml:id="Platon">
+                  <persName xml:lang="fr">Platon</persName>
+                  <birth when="-428"/>
+                  <death when="-347"/>
+                  <ptr type="furtherInfo" target="/wiki/Platon"/>
+                  <ptr type="wikidata" target="Q859"/>
+                  <graphic url="Platon.jpg"/>
+               </person>
+               <person xml:id="Campegio">
+                  <persName xml:lang="fr">Lorenzo Campegio</persName>
+                  <birth when="1474-11-07"/>
+                  <death when="1539-07-25"/>
+                  <ptr type="furtherInfo" target="/wiki/Lorenzo_Campeggio"/>
+                  <graphic url="Campegio.jpg"/>
+               </person>
+               <person xml:id="Luther">
+                  <persName xml:lang="fr">Martin Luther</persName>
+                  <birth when="1483-11-10"/>
+                  <death when="1546-02-18"/>
+                  <ptr type="furtherInfo" target="/wiki/Martin_Luther"/>
+                  <ptr type="wikidata" target="Q9554"/>
+                  <graphic url="Luther.jpg"/>
+               </person>
+               <person xml:id="Karlstadt">
+                  <persName xml:lang="fr">Andreas Rudolff-Bodenstein von Karlstadt</persName>
+                  <birth when="1486"/>
+                  <death when="1541-12-24"/>
+                  <ptr type="furtherInfo" target="/wiki/Andreas_Bodenstein"/>
+                  <ptr type="wikidata" target="Q60589"/>
+                  <graphic url="Karlstadt.jpg"/>
+               </person>
+               <person xml:id="PioDiCarpi">
+                  <persName xml:lang="fr">Alberto Pio di Carpi</persName>
+                  <birth when="1475-07-23"/>
+                  <death when="1531-01-08"/>
+                  <ptr type="furtherInfo" target="/wiki/Alberto_III_Pio"/>
+                  <ptr type="wikidata" target="Q1754523"/>
+                  <graphic url="PioDiCarpi.jpg"/>
+               </person>
+               <person xml:id="Henry8">
+                  <persName xml:lang="fr">Henry VIII</persName>
+                  <birth when="1509-04-21"/>
+                  <death when="1547-01-28"/>
+                  <ptr type="furtherInfo" target="/wiki/Henri_VIII"/>
+                  <ptr type="wikidata" target="Q38370"/>
+                  <graphic url="Henry8.jpg"/>
+               </person>
+               <person xml:id="Epicure">
+                  <persName xml:lang="fr">Epicure</persName>
+                  <birth when="-342"/>
+                  <death when="-270"/>
+                  <ptr type="furtherInfo" target="/wiki/%C3%89picure"/>
+                  <ptr type="wikidata" target="Q43216"/>
+                  <graphic url="Epicure.jpg"/>
+               </person>
+               <person xml:id="Cann">
+                  <persName xml:lang="fr">Nicholas Cann</persName>
+               </person>
+               <person xml:id="Maldonado">
+                  <persName xml:lang="fr">Juan Maldonado</persName>
+                  <birth when="1485"/>
+                  <death when="1554"/>
+               </person>
+               <person xml:id="AdrianVI">
+                  <persName xml:lang="fr">Adrian VI</persName>
+                  <birth when="1459-03-02"/>
+                  <death when="1523-09-14"/>
+                  <ptr type="furtherInfo" target="/wiki/Adrien_VI"/>
+                  <ptr type="wikidata" target="Q57087"/>
+                  <graphic url="AdrianVI.jpg"/>
+               </person>
+               <person xml:id="CharlesQuint">
+                  <persName xml:lang="fr">Charles Quint</persName>
+                  <birth when="1500-02-24"/>
+                  <death when="1558-09-21"/>
+                  <ptr type="furtherInfo" target="/wiki/Charles_Quint"/>
+                  <ptr type="wikidata" target="Q32500"/>
+                  <graphic url="CharlesQuint.jpg"/>
+               </person>
+               <person xml:id="WWarham">
+                  <persName xml:lang="fr">William Warham</persName>
+                  <birth when="1450"/>
+                  <death when="1532-08-22"/>
+                  <ptr type="furtherInfo" target="/wiki/William_Warham"/>
+                  <ptr type="wikidata" target="Q744845"/>
+                  <graphic url="WWarham.jpg"/>
+               </person>
+               <person xml:id="GeorgesSaxe">
+                  <persName xml:lang="fr">Georges de Saxe</persName>
+                  <birth when="1471-08-27"/>
+                  <death when="1539-04-17"/>
+                  <ptr type="furtherInfo" target="/wiki/Georges_de_Saxe"/>
+                  <ptr type="wikidata" target="Q719626"/>
+                  <graphic url="GeorgesSaxe.jpg"/>
+               </person>
+               <person xml:id="Faber">
+                  <persName xml:lang="fr">Johann Faber</persName>
+                  <birth when="1478"/>
+                  <death when="1541-05-21"/>
+                  <ptr type="furtherInfo" target="/wiki/Johann_Faber"/>
+               </person>
+            </listPerson>
+         </particDesc>
+
+         <settingDesc>
+            <listPlace>
+               <place xml:id="Bale">
+                  <placeName key="IT" xml:lang="fr">Bâle</placeName>
+                  <location>
+                     <geo>
+                        <country>Suisse</country>
+                        <lat>47.561242</lat>
+                        <long>7.582347</long></geo>
+                  </location>
+               </place>
+               <place xml:id="Greenwich">
+                  <placeName xml:lang="fr">Greenwich</placeName>
+                  <location>
+                     <geo>
+                        <country>Angleterre</country>
+                        <lat>51.487397</lat>
+                        <long>-0.0304749</long>
+                     </geo>
+                  </location>
+               </place>
+               <place xml:id="Bern">
+                  <placeName xml:lang="fr">Bern</placeName>
+                  <placeName xml:lang="EN">Berne</placeName>
+                  <location>
+                     <country>Allemagne</country>
+                     <geo>
+                        <lat>46.9546486</lat>
+                        <long>7.32483</long>
+                     </geo>
+                  </location>
+               </place>
+               <place xml:id="Londres">
+                  <placeName xml:lang="fr">Londres</placeName>
+                  <placeName xml:lang="EN">London</placeName>
+                  <location>
+                     <country>Angleterre</country>
+                     <geo>
+                        <lat>51.528308</lat>
+                        <long>-0.3817815</long>
+                     </geo>
+                  </location>
+               </place>
+               <place xml:id="Angleterre">
+                  <placeName xml:lang="fr">Angleterre</placeName>
+                  <placeName xml:lang="EN">England</placeName>
+                  <location>
+                     <geo>
+                        <lat>51.528308</lat>
+                        <long>-0.3817765</long>
+                     </geo>
+                  </location>
+               </place>
+               <place xml:id="Germany">
+                  <placeName xml:lang="fr">Allemagne</placeName>
+                  <placeName xml:lang="EN">Germany</placeName>
+                  <location>
+                     <geo>
+                        <lat>51.0898736</lat>
+                        <long>5.9670654</long>
+                     </geo>
+                  </location>
+               </place>
+               <place xml:id="Rome">
+                  <placeName xml:lang="fr">Rome</placeName>
+                  <placeName xml:lang="EN">Roma</placeName>
+                  <location>
+                     <country>Italie</country>
+                     <geo>
+                        <lat>41.891775</lat>
+                        <long>12.486137</long></geo>
+                  </location>
+               </place>
+               <place xml:id="Espagne">
+                  <placeName xml:lang="fr">Espagne</placeName>
+                  <placeName xml:lang="EN">Spain</placeName>
+                  <location>
+                     <geo>
+                        <lat>40.4379543</lat>
+                        <long>-3.6795367</long>
+                     </geo>
+                  </location>
+               </place>
+               <place xml:id="Burgos">
+                  <placeName xml:lang="fr">Burgos</placeName>
+                  <location>
+                     <country>Espagne</country>
+                     <geo>
+                        <lat>42.3441207</lat>
+                        <long>-3.7297126</long>
+                     </geo>
+                  </location>
+               </place>
+               <place xml:id="Paris">
+                  <placeName xml:lang="fr">Paris</placeName>
+                  <location>
+                     <country>France</country>
+                     <geo>
+                        <lat>48.8691891</lat>
+                        <long>2.3393153,17</long>
+                     </geo>
+                  </location>
+               </place>
+            </listPlace>
+         </settingDesc>
+      </profileDesc>
+   </teiHeader>
+
+   <!-- FACSIMILE ??? -->
+
+   <text>
+      <group>
+         <text type="lettre" 
+            xml:id="Er-1" 
+            n="1" 
+            date="1524-12-10"
+            place="#Bale"
+            >
+            <front>
+               <docDate>
+                  <persName ref="#Erasme" role="author">Erasmus</persName> to <persName ref="#Melanchton" role="dest">Philip Melanchton</persName>. <placeName ref="#Bale">Bâle</placeName>,
+                  <date when="1524-12-10"> December 10, 1524.</date>
+               </docDate>
+            </front>
+            <body>
+               <p> The Pope's advocates have been the Pope's worst friends, and the extravagant
+                  Lutherans have most hurt <persName ref="#Luther">Luther</persName>. I would have
+                  held aloof had it been possible. I am no judge of other men's consciences or
+                  master of other men's beliefs. There are actors enough on the stage, and none can
+                  say how all will end. I do not object generally to the evangelical doctrines, but
+                  there is much in <persName ref="#Luther">Luther</persName>'s teaching which I
+                  dislike. He rims everything which he touches into extravagance. True, Christendom
+                  is corrupt and needs the rod, but it would be better, in my opinion, if we could
+                  have the Pope and the princes on our side. <persName ref="#Campegio">Campegio</persName> was gentle enough, but could
+                  do nothing. Clement was not opposed to reform, but when I urged that we should
+                  meet him half-way nobody listened. The violent party carries all before it. They
+                  tear the hoods off monks who might as well have been left in their cells. Priests
+                  are married, and images are torn down. I would have had religion purified without
+                  destroying authority. Licence need not be given to sin. Practices grown corrupt by
+                  long usage might be gradually corrected without throwing everything into
+                  confusion. <persName ref="#Luther">Luther</persName> sees certain things to be
+                  wrong, and in flying blindly at them causes more harm than he cures. Order human
+                  things as you will, there will still be faults enough, and there are remedies
+                  worse than the disease. Is it so great a thing to have removed images and changed
+                  the canon of the mass ? What good is done by telling foolish lads that the Pope is
+                  Antichrist, that confession carries the plague, that they cannot do right if they
+                  try, that good works and merits are a vain imagination, that free will is an
+                  illusion, that all things hold together by necessity, and that man can do nothing
+                  of himself? Such things are said. You will tell me that <persName ref="#Luther"
+                     >Luther</persName> does not say them — that only idiots say them. Yes, but
+                  Luther encourages men who say them, and if I had a contract to make I would rather
+                  deal with a Papist than with some evangelicals that I have known. It is not always
+                  safe to remove the Camarinas of this world, and <persName ref="#Platon"
+                     >Plato</persName> says you cannot guide the multitude with- out deceiving them.
+                  Christians must not lie, but they need not tell the whole truth. Would that
+                     <persName ref="#Luther">Luther</persName> had tried as hard to improve popes
+                  and princes as to expose their faults. He speaks bitterly of me. He may say what
+                  he pleases. <persName ref="#Karlstadt">Carlstadt</persName> has been here. He has
+                  published a book in German maintaining that the Eucharist is only a sign. All
+                     <placeName ref="#Bern">Berne</placeName> has been in an uproar, and the printer
+                  imprisoned. </p>
+               <p> You are anxious that <persName ref="#Luther">Luther</persName> shall answer me
+                  with moderation. Unless he writes in his own style, the world will say we are in
+                  connivance. Do not fear that I shall oppose evangelical truth. I left many faults
+                  in him unnoticed lest I should injure the Gospel. I hope mankind will be the
+                  better for the acrid medicines with which he has dosed them. Perhaps we needed a
+                  surgeon who would use knife and cautery. <persName ref="#Karlstadt"
+                     >Carlstadt</persName> and he are going so fast that <persName ref="Luther"
+                     >Luther</persName> himself may Come to regret popes and bishops. His genius is
+                  vehement. We recognise in him the PelidcB stomachum <!-- mouarf --> cedere nescii.
+                  The devil is a clever fellow. Success like <persName ref="#Luther"
+                     >Luther</persName>'s might spoil the most modest of men. </p>
+            </body>
+         </text>
+         <text type="lettre" xml:id="TM-1" n="2" date="1525-12-18" place="#Greenwich">
+            <front>
+               <docDate>
+                  <persName ref="#More" role="author">SIR T. MORE</persName> TO <persName ref="#Erasme" role="dest"
+                     >ERASMUS</persName>. <placeName ref="#Greenwich">Greenwich</placeName>, <date when="1525-12-18"
+                     >December 18, 1525.</date>
+               </docDate>
+            </front>
+            <body>
+               <p>Do it (<persName ref="#More">More</persName> said), you have nothing to fear. Had
+                  the Lutherans meant to try conclusions with you in earnest, they would have done
+                  it when your first part appeared. You have drawn a picture there of a beast and
+                  the enemy of souls. You have dragged up the smoky demon of Tartarus like another
+                  Cerberus out of hell, and have shown him in visible form. You cannot increase your
+                  danger by following up your argument. Go on, therefore. <persName ref="#Luther"
+                     >Luther</persName> himself is not so cowardly as to hope, or so wicked as to
+                  wish, that you should be silent. I cannot say how foolish and inflated I think his
+                  letter to you. He knows well how the wretched glosses with which he has darkened
+                  Scripture turn to ice at your touch. They were cold enough already. If for some
+                  inexplicable reason you cannot make a public rejoinder, at least set down your
+                  private thoughts in writing and send the MS. to me. The Bishop of <placeName
+                     ref="#Londres">London</placeName> and I willtake charge of it. </p>
+            </body>
+         </text>
+         <text type="lettre" xml:id="Er-2" n="3" date="1524-12-12" place="#Bale">
+            <front>
+               <docDate><persName ref="#Erasme" role="author">Erasmus</persName> TO <persName ref="#GeorgesSaxe" role="dest">DUKE GEORGE</persName>. <placeName
+                     ref="#Bale">Bâle</placeName>, <date when="1524-12-12">December 12,
+                  1524.</date></docDate>
+            </front>
+
+
+            <body>
+               <p>When <persName ref="#Luther">Luther</persName> first spoke the whole world
+                  applauded, and your Highness among the rest. Divines who are now his bitterest
+                  opponents were then on his side. Cardinals, even monks, encouraged him. He had
+                  taken up an excellent cause. He was attacking practices which every honest man
+                  condemned, and contending with a set of harpies, under whose tyranny Christendom
+                  was groaning. Who could then dream how far the movement would go ? Had
+                  <!--Daniel--> foretold it to me, I would not have believed him. <persName
+                     ref="#Luther">Luther</persName> himself never expected to produce such an
+                  effect. After his Theses had come out I persuaded him to go no further. I doubted
+                  if he had learning enough. I was afraid of riots. I urged the printers to set in
+                  type no more books of his. He wrote to me. I cautioned him to be moderate. The
+                  Emperor was then well inclined to him. He had no enemies save a few monks and
+                  papal commissioners, whose trade he had spoilt. These people, fools that they
+                  were, kindled a fire, and it was then said to be all my fault — I ought to have
+                  silenced <persName ref="#Luther">Luther</persName> ! I thought no one could be
+                  less fit. My old enemies took up the cry, and told the Emperor that I was the
+                  person to do it. They only wanted to throw me among the wolves. What <!--coiJd--> I have
+                  done ? They required me to revoke what I had said at first in <persName ref="#Luther">Luther</persName>'s favour. A
+                  pretty condition! I was to lie against my own soul, make myself the hangman of a
+                  set of prostitute wretches, and draw the hatred on myself of all <persName ref="#Luther">Luther</persName>'s
+                  supporters. I have or had some popularity in Europe. I should have lost it all,
+                  and have been left naked to be torn in pieces by the wild beasts. You say the
+                  Emperor and the Pope will stand up for me. How can the Emperor and the Pope help
+                  me when they can hardly help themselves? To call on me to put myself forward is to
+                  saddle an ox or overload a broken-down horse. I am to sacrifice myself for tte
+                  Catholic Faith! It is not for everyone to uphold the Ark. Even Jerome, when he
+                  attacks heresy, becomes almost a heretic. I do it ! Are there no bishops, no
+                  college dignitaries, no hosts of divines? Surely among so many there were fitter
+                  persons than I. Some really tried. Great persons declared war. The Pope put out a
+                  Bull, the Emperor put out an edict, and there were prisons, faggots, and burnings.
+                  Yet all was in vain. The mischief only grew. What could a pigmy like <persName ref="#Erasme">Erasmus</persName> do
+                  against a champion who had beaten so many giants? There were men of intellect on
+                  <persName ref="#Luther">Luther</persName>'s side to whom I had looked up with respect. I wondered what they found in
+                  him to impress them ; but so it was. I thought I must be growing blind. I did see,
+                  however, that the world was besotted with ritual. Scandalous monks were ensnaring
+                  and strangling consciences. Theology had become sophistry. Dogmatism had grown to
+                  madness, and, besides, there were the unspeakable priests, and bishops, and Roman
+                  officials. Perhaps I thought that such disorders required the surgeon, and that
+                  God was using <persName ref="#Luther">Luther</persName> as he used Pharaoh and Nebuchadnezzar. <persName ref="#Luther">Luther</persName> could not have
+                  succeeded so signally if God had not been with him, especially when he had such a
+                  crew of admirers behind him. I considered that it was a case for compromise and
+                  agreement. Had I been at Worms, I believe I could have brought it to that. The
+                  Emperor was not imwilling. Adrian, Clement, Campegio have not been unwilling. The
+                  difficulty lay elsewhere. <persName ref="#Luther">Luther</persName>'s patrons were stubborn and would not yield a
+                  step. The Catholic divines breathed only fire and fury. If that was to be the way,
+                  there was no need of me. I conceived, moreover, that if it was fit and right to
+                  burn a man for contradicting articles decreed by the Church, there was no law to
+                  burn him for holding mistaken opinions on other subjects, as long as he defended
+                  them quietly and was otherwise of blameless life. The Paris divines do not think
+                  on the papal power as the Italian divines think, but they do not burn each other.
+                  Thomists and Scotists differ, but they can work in the same schools. Stakes and
+                  prisons are vulgar remedies. Two poor creatures have been burnt at Brussels, and
+                  the whole city has turned Lutheran. If the infection had touched only a few it
+                  might be stamped out, but it has gone so far that kings may catch it. I do not say
+                  let it alone, but do not make it worse by bad treatment. Fear will alter nothing,
+                  and spasmodic severity exasperates. If you put the fire out by force, it will
+                  burst up again. I trust, I hope that <persName ref="#Luther">Luther</persName> will make a few concessions and that
+                  Pope and princes may still consent to peace.</p>
+               <p> May Christ's dove come among us, or else Minerva's owl. <persName ref="#Luther">Luther</persName> has administered
+                  an acrid dose to a diseased body. God grant it prove salutary. Your Highness would
+                  not have written as you have done if you knew all that I could tell you. The Pope,
+                  the Emperor, his brother Ferdinand, the King of England wrote to me in a far
+                  different tone. Your freedom does not offend me. It rises only out of your zeal
+                  for the Faith. I risked the loss of my best friends by refusing to join Luther,
+                  but I did not break off my connection with them because they did join him, and
+                  Adrian and Campegio, and the <persName ref="Henry8">King of <placeName ref="#England">England</placeName></persName>, and the Cardinal of York all say
+                  that I did right. I vex <persName ref="#Luther">Luther</persName> more by continuing my intimacy with them than I
+                  could do with the most violent abuse. The eager Catholics were disappointed, of
+                  course, with <persName ref="#Erasme">Erasmus</persName>'s "Free "Will." The mountain had brought forth a mouse. If
+                  that was all that he could do, he might as well have held his peace. The Prince of
+                  Carpi wrote to him as Duke George had done, telling him he was still under
+                  suspicion of favouring <persName ref="#Luther">Luther</persName>. He answers : — </p>
+
+            </body>
+         </text>
+         <text type="lettre" xml:id="Er-3" n="4" date="1525-10-10">
+
+            <front>
+               <docDate> TO <persName ref="#PioDiCarpi" role="dest">ALBERTUS PIUS, PRINCE OF CARPI</persName>. <date when="1525-10-10">October 10, 1525.</date> </docDate>
+            </front>
+
+            <body>
+               <p> When the Lutheran drama opened, and all the world applauded, I advised my friends
+                  to stand aloof. I thought it would end in bloodshed, and had I taken a part made
+                  enemies of the Swiss and Germans, who had stood by me in the fight for learning.
+                  Certain theologians left no stone unturned to drive me to join a party which they
+                  expected would be condemned. The Lutherans alternately courted me and menaced me.
+                  Tor all this, I do not move a finger's breadth from the teaching of the Roman
+                  Church. You would think more of this if you knew the Germans, and what a tempest I
+                  could raise if I chose to lead the fray. Instead of leading, I have stood naked
+                  and unarmed between the javelins of two angry foes. It is said that Luther has
+                  borrowed much from me. He denies it himself and says I do not understand theology.
+                  But suppose it is so. Has he borrowed nothing from Augustine and St. Paul ? You
+                  ask me why I did not speak out at once. Because I regarded <persName ref="#Luther">Luther</persName> as a good man,
+                  raised up by Providence to correct the depravity of the age. Whence have all these
+                  troubles risen ? From the audacious and open immorality of the priesthood, from
+                  the arrogance of the theologians and the tyranny of the monks. These began the
+                  battle by attacking learning. I did not wish to expel the old studies. I wished
+                  only to give Greek and Hebrew a place among them which I thought would minister to
+                  the glory of Christ. The monks turned the question on points of faith where they
+                  thought they would have stronger ground. You remember Eeuchlin. The conflict was
+                  raging between the Muses and their enemies, when up sprang Luther, and the object
+                  thenceforward was to entangle the friends of literature in the Lutheran business
+                  so as to destroy both them and him together. So things have gone on ever since,
+                  the clamour growing louder and the spirit of the contest worse. This is the naked
+                  fact. If what I hear is true, I must call on your highness to check the slanders
+                  spread about me. If I am mistaken, you will pardon my complaints. </p>
+
+               <p> The English friends of <persName ref="#Erasme">Erasmus</persName> were more eager than even the German princes that
+                  he should strike again at <persName ref="#Luther">Luther</persName>, and strike in earnest. Beyond all others, <persName ref="#More">Sir
+                  Thomas More,</persName> who wished him to silence for ever the charge of having been <persName ref="#Luther">Luther</persName>'s
+                  confederate. More had understood and valued the tract upon "Free Will." But it was
+                  not enough. He must enlarge his reply and make a final end of <persName ref="#Luther">Luther</persName>. He must do
+                  it. No excuse would serve him for deserting the cause of God. </p>
+            </body>
+
+         </text>
+         <text type="lettre" xml:id="TM-2" n="5" date="1525-12-18" place="#Greenwich">
+            <front>
+               <docDate><persName ref="#More" role="author">SIR T. MORE</persName> TO <persName ref="#Erasme" role="dest">ERASMUS</persName>. <placeName ref="#Greenwich">Greenwich</placeName>, <date when="1525-12-18">December 18, 1525</date>.</docDate>
+            </front>
+
+            <body>
+               <p>Do it (<persName ref="#More">More</persName> said), you have nothing to fear. Had the Lutherans meant to try
+                  conclusions with you in earnest, they would have done it when your first part
+                  appeared. You have drawn a picture there of a beast and the enemy of souls. You
+                  have dragged up the smoky demon of Tartarus like another Cerberus out of hell, and
+                  have shown him in visible form. You cannot increase your danger by following up
+                  your argument. Go on, therefore. <persName ref="#Luther">Luther</persName> himself is not so cowardly as to hope, or
+                  so wicked as to wish, that you should be silent. I cannot say how foolish and
+                  inflated I think his letter to you. He knows well how the wretched glosses with
+                  which he has darkened Scripture turn to ice at your touch. They were cold enough
+                  already. If for some inexplicable reason you cannot make a public rejoinder, at
+                  least set down your private thoughts in writing and send the MS. to me. The Bishop
+                  of London and I will take charge of it. </p>
+
+               <p>Alas, <persName ref="#Erasme">Erasmus</persName> could not do it. His private thought, which indeed he had spoken
+                  freely enough, was that, in the negative part of his teaching, <persName ref="#Luther">Luther</persName> was right,
+                  and he would not be found fighting against God. He poured out his sorrows and his
+                  perplexities in a letter to the Dominican Faber, who, like More, had been urging
+                  him to write more fully.</p>
+            </body>
+         </text>
+
+         <text type="lettre" xml:id="Er-4" n="6">
+
+            <front>
+               <docDate>TO <persName ref="#Faber" role="dest">FABER</persName>.</docDate>
+
+
+            </front>
+
+            <body>
+               <p>You see how fiercely <persName ref="#Luther">Luther</persName> strikes at me, moderate though I was. What would he
+                  have said had I provoked him in earnest? He means his book to live with my crimes
+                  embalmed in it. Ten editions of his reply have been published already. The great
+                  men in the Church are afraid to touch him, and you want poor me to do it again, me
+                  who am too weak to make myself feared, and too little of a saint in my life not to
+                  dread what may be said of me. <persName ref="#Luther">Luther</persName> pretends to wish to be friendly, yet he calls
+                  me another Lucian, says that I do not believe in God, or believe, like <persName ref="#Epicure">Epicurus</persName>,
+                  that God has no care for man. He accuses me of laughing at the Bible and of being
+                  an enemy to Christianity, and yet expects me to thank him for his gentle handling.
+                  Faction spares none, and calumny sticks and cannot be washed off. The grosser the
+                  charge the more credit it receives. I wrote my book to please the princes and to
+                  show that I was not a Lutheran, but when I pointed out how the mischief was to be
+                  met which the monks and theologians were doing, no one listened. I wrote to <persName ref="#AdrianVI">Pope
+                  Adrian</persName>. I suppose my letter did not please him, for he took no notice of it, and
+                  now you see what has come. In <placeName ref="#France">France</placeName> they are at work with gibbet and dungeon. It
+                  won't answer. The other side cry " Liberty ! " and have the printers with them,
+                  while the Church has only monks. Epicurean priests, and rabid Divines. The nobles
+                  favour the movement with an eye to the churchmen's lands and offices. The princes
+                  like to fish in troubled waters and plunder the wrecks which drive ashore. Go on
+                  with your stakes and prisons and you will have universal chaos. As yet we are only
+                  at the beginning. The <persName ref="#AdrianVI">Pope</persName> has ordered the Italians to be quiet. He is wise. They
+                  will look on and chuckle while we cut each other's throats. Why cannot we be wise
+                  too ? We are all embarked in the same ship. If the ship sinks, we shall sink with
+                  it, and the mischief is spread too widely to be cured by ordinary remedies. The
+                  princes, you say, want my opinion. They shall have it if they wish, but it must be
+                  kept secret. Ferocious writing ought to be checked on both sides. One is as bad as
+                  the other. Preachers and orators should be silenced, and quiet men put in their
+                  places who will leave alone dogmas and teach piety and morals. The Catholics are
+                  now persecuting innocent men and are driving into <persName ref="#Luther">Luther</persName>'s camp those whom they
+                  should most wish to attract. Rage if you will against rebellion, but do not hurt
+                  those who have done no harm. Do not close the schools, but see that they have fit
+                  masters. The Lutherans are strong in the towns. Bid them tolerate their opponents.
+                  Leave each man to his own conscience and put down riots. Let Catholics meanwhile
+                  reform the abuses which have provoked the revolt, and leave the rest to a general
+                  council. Stir no more hornets' nests, unless you wish to ruin <persName ref="#Erasme">Erasmus</persName>.</p>
+
+               <p>One more curious letter, without date or address, belongs to the present period,
+                  and was probably meant for the <persName ref="#CharlesQuint">Emperor</persName>'s eye.</p>
+            </body>
+         </text>
+         <text type="lettre" xml:id="Er-5" n="7" >
+            <front>
+               <docDate>TO <persName ref="#WWarham" role="dest">ARCHBISHOP WARHAM</persName>.</docDate>
+            </front>
+            <body>
+               <p>Revolution is in the air. I fear bloodshed, for the roots have gone deep. No one
+                  who has not seen <placeName ref="#Germany">Germany</placeName> can believe in what condition we are. I cannot leave the
+                  Church and join the reformers. But the people are all on their side, in
+                  consequence of the raging of the monks, who are working their own ruin. At <placeName ref="#Rome">Rome</placeName>
+                  all is confusion. Letters cannot enter. It is supposed that <persName ref="#AdrianVI">the Pope</persName> and the
+                  <persName ref="#CharlesQuint">Emperor</persName> will be reconciled, and that the <persName ref="#AdrianVI">Pope</persName> will take the <persName ref="#CharlesQuint">Emperor</persName>'s side. In
+                  that case there will be no peace. The <persName ref="#AdrianVI">Pope</persName> ought to be indifferent.</p>
+               <p>In these later anxious years we have lost sight of V the old brilliant witty
+                  <persName ref="#Erasme">Erasmus</persName>. The times had grown serious, and his humour when it showed was bitter,
+                  but the bright nature was still there, and now and then a gleam breaks out among
+                  the clouds. The letter to <persName ref="#WWarham">Warham</persName> was sent by the hand of a disciple, <persName ref="#Cann">Nicholas
+                  Cann</persName>, who was paying <placeName ref="#Angleterre">England</placeName> a visit. <persName ref="#Erasme">Erasmus</persName> gave him an introduction to the
+                  <persName ref="#WWarham">Archbishop</persName>, and a few hints to <persName ref="#Cann">Cann</persName> himself. </p>
+
+               <p>You will enjoy your visit. You will meet many of the English nobles and men of
+                  learning. They will be infinitely kind to you, but be careful not to presume upon
+                  it : when they condescend, be you modest. Great men do not always mean what their
+                  faces promise, so treat them reverendly, as if they were gods. They are generous
+                  and will offer you presents, but recollect the proverb. Not everything everywhere
+                  and from everyone. Accept gratefully what real friends give you. To mere
+                  acquaintances excuse yourself lightly ; more art is needed in refusing graciously
+                  than in receiving. An awkward rejection often makes enemies. Imitate the polypus
+                  and you have no difficulties. Put out your head, give your right hand, and yield
+                  the wall ; smile on as many as you please, but trust only those you know, and be
+                  specially careful to find no fault with English things or customs. They are proud
+                  of their country, as well they may be. </p>
+
+               <p> So much for the character of our ancestors, which has altered less than one might
+                  have expected. <persName ref="#Erasme">Erasmus</persName> had other things to make him anxious, and was soon absorbed
+                  again in the German confusions. He seems to have been specially confidential with
+                  <persName ref="#GeorgesSaxe">Duke George of Saxony</persName>. </p>
+
+            </body>
+
+         </text>
+         <text type="lettre" xml:id="Er-6" n="8" date="1527-09-02" >
+            <front>
+
+               <docDate>FROM <persName ref="#Erasme" role="author">ERASMUS</persName> TO <persName ref="#GeorgesSaxe" role="dest">DUKE GEORGE</persName>. <date when="1527-09-02">September 2, 1527.</date> </docDate>
+            </front>
+
+            <body>
+
+
+               <p> <persName ref="#Luther">Luther</persName> amazes me. If the spirit which is in him be an evil one, no more fatal
+                  monster was ever born. If it be a good spirit, much of the fruit of the Gospel is
+                  wanting in him. If a mixed one, how can two spirits so strong exist in the same
+                  person ? Intolerable corruptions have crept into Christian life which custom makes
+                  appear like virtues, and there are other changes besides which wise men would
+                  gladly see if they can be had without a convulsion. This I know to be the opinion
+                  of the <persName ref="#CharlesQuint">Emperor</persName>. But nothing will satisfy <persName ref="#Luther">Luther</persName>, and his party is so divided, and
+                  their gospel is generating so much licence, that it may fall to pieces, even if
+                  the <persName ref="AdrianVI">Pope</persName> and the <persName ref="#CharlesQuint">Emperor</persName> combine. The hope is that the Princes may have influence
+                  enough to keep the Lutherans within bounds, or a worse fire may break out on the
+                  other side through those wretched monks and divines.</p>
+
+               <p> The folly of the monks and theologians made the real danger. On the same day he
+                  writes to another correspondent : —</p>
+               <p> Frightful storms spring from small beginnings. The Lutheran cyclone rose out of a
+                  trifle. The Dominicans paraded their indulgences too ostentatiously. <persName ref="#Luther">Luther</persName>
+                  objected. The Dominicans set up a clamour. I tried to stop them, but could not do
+                  it, and you see the result. The <persName ref="#AdrianVI">Pope</persName> should have left matters alone. No one dreads
+                  the monks more than the Pope does, and none treat the <persName ref="#AdrianVI">Pope</persName> with more contempt than
+                  the monks do when it suits their purpose.</p>
+
+
+               <p> Invariably <persName ref="#Erasme">Erasmus</persName> speaks of the monks as the cause of all that had happened. His
+                  especial bitterness was due, perhaps, to his early experience ; and undoubtedly
+                  they returned his hatred. They had been forbidden to abuse him in their pulpits.
+                  They were working underground to prevent the circulation of his books and induce
+                  the Church to censure them. <persName ref="#Luther">Luther</persName>'s writings, being chiefly in German, were
+                  unread save where German was spoken. The writings of Erasmus had spread over
+                  Europe. His controversy with <persName ref="#Luther">Luther</persName> had not earned his pardon. He was a subject of
+                  the Spanish crown ; a party favourable to Mm had begun to grow in the Peninsula,
+                  which roused the regulars there to fury. The sacred soil of <placeName ref="#Espagne">Spain</placeName> should at least
+                  be kept free from heresy. <persName ref="#Maldonado">Juan Maldonado</persName> writes to him from <placeName ref="#Burgos">Burgos</placeName> :</p>
+
+               <p> The theologians here are working with the monks, and win be counted the only wise
+                  ones. They impose on noble ladies with their pretence of holiness. They tell them
+                  that they cannot have their sins pardoned unless they go on their knees to some
+                  sophisticated friar — only friars, they say, can distinguish the qualities of
+                  sins. Not a man, from the meanest potboy to the <persName ref="CharlesQuint">Emperor</persName>, will they count a
+                  Christian unless he takes a monk for a director, and many a pretty tale is told by
+                  poor women of the shameless doings of these philosophasters. They hate you, but do
+                  not you be disturbed. You have torn the masks from their faces, and shown them to
+                  the world as they are. I need not say what curses they have imprecated on you.
+                  They are now appealing to the bishops and magistrates to prohibit the sale of your
+                  books. The hooded masters know well enough the difference between your teaching
+                  and their hypocrisy. They know that if your writings are read there will be an end
+                  of them. But their abuse does not hurt you. We love you the better for it. A
+                  Spanish translation of the " Colloquies " is in the hands of every man and
+                  woman.</p>
+
+
+
+               <p> The <persName>Emperor</persName> was now himself in <placeName ref="#Spain">Spain</placeName>. The Spanish authorities appealed to him to
+                  support them. He had so long corresponded with <persName ref="#Erasme">Erasmus</persName> on the great questions of
+                  the day, had seemed so entirely to agree with him, had so peremptorily silenced
+                  the attacks upon him in the Low Countries, that <persName ref="#Erasme">Erasmus</persName> looked confidently for a
+                  continuance of his countenance ; but it was not without reason that <persName ref="#Erasme">Erasmus</persName> had
+                  been alarmed at the possible consequences o£ the capture of <placeName ref="#Rome">Rome</placeName> in a change of
+                  attitude on <persName ref="#CharlesQuint">Charles</persName>'s part. The <persName ref="#CharlesQuint">Emperor</persName> did, indeed, order the Spanish monks to
+                  hold their tongues ; but there were symptoms which <persName ref="#Erasme">Erasmus</persName>'s friends did not like,
+                  and the monks were dangerous.</p>
+               <p> Your enemies (wrote another of these friends) are now mute, and dare not crow
+                  even on their own dunghills. But they mutter still in private, and I fear the
+                  beast with 700 heads may win in the end. You, though long may you live, must die
+                  at last ; but a religious order never dies. It has good men in it as well as bad,
+                  but good and bad alike stand by their profession, and the worse part drags the
+                  better after it.</p>
+               <p> A religious order never dies. <persName ref="#CharlesQuint">Charles V</persName> could not just then afford to quarrel
+                  with the leaders of the Church in <placeName ref="#Spain">Spain</placeName>. It was necessary for him to pacify the
+                  suspicions which had risen out of the imprisonment of the <persName ref="#AdrianVI">Pope</persName>, and though he
+                  refused to allow <persName ref="#Erasme">Erasmus</persName>'s writings to be suppressed, he could not resist a demand
+                  that those writings should be examined by the Inquisition. <persName ref="#Erasme">Erasmus</persName> had appealed to
+                  him. He replied in a curious letter, half an apology, though in terms of the
+                  utmost personal esteem.</p>
+
+            </body>
+         </text>
+
+
+         <!-- https://archive.org/details/cu31924026502793/page/n351/mode/2up  CHARLES V. TO ERASMUS  -->
+
+      </group>
+   </text>
+</TEI>

@@ -1,0 +1,141 @@
+/* Général */
+
+.titre_general {
+    font-family: 'Tangerine', serif;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+
+.sous_titre_general {
+    font-family: 'Tangerine', serif;
+    text-align: center;
+    font-size: 45px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+
+
+.body {
+	text-align: justify;
+	text-indent: 5%;
+}
+
+.preletter {
+    font-style: italic;
+}
+
+.texte_navbar {
+    font-family: 'Playfair+Display';
+    font-size: 15px;
+}
+
+
+.texte_date {
+    font-family: 'Playfair+Display';
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.texte_index {
+    font-family: 'Playfair+Display', serif;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.texte_desc {
+    font-family: 'Playfair+Display', serif;
+    text-align: center ;
+    font-style: italic;
+    font-size: 15px;
+    color : rgba(41, 108, 51, 0.8);
+}
+
+/* Page d'accueil */
+
+.accueil_bienvenue {
+    font-family: 'Tangerine', serif;
+    text-shadow: 4px 4px 4px #aaa;
+    font-size: 60px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+/* Index général */
+
+
+
+.demo {
+		text-align: center;
+		border:1px solide #C0C0C0;
+		border-spacing:2px;
+		padding:5px;
+	}
+	.demo th {
+		border:2px solide #C0C0C0;
+		padding:10px;
+		background:rgba(32, 93, 34, 0.2);
+	}
+
+	.demo td {
+		border:1px solide #C0C0C0;
+		padding:10px;
+		background:#FFFFFF;
+	}
+
+
+
+/* Index général */
+
+
+.imgal {
+    max-width: 220px;
+    max-height: 150px;
+}
+
+.figcaptiongal {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    font: italic smaller ;
+    padding: 5px;
+
+}
+
+
+
+
+/* Page erreur 404 */
+
+.titre_generalerreur {
+    font-family: 'Tangerine', serif;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+
+.sous_titre_generalerreur {
+    font-family: 'Tangerine', serif;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 0px;
+    padding-bottom: 2px;
+}
+.clignote {
+  margin-left: 250px;
+  position: relative;
+  color:green;
+  animation: clignote 2s linear infinite;
+}
+@keyframes clignote {
+  50% { opacity: 0; }
+}
+
