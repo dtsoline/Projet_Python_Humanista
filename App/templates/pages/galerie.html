@@ -1,0 +1,34 @@
+{% extends "conteneur.html" %}
+{% block corps %}
+
+<h1 class="titre_general">Galerie humaniste</h1>
+
+<div class="row" id="gallery" style="margin: 20px;">
+
+    {% for personne in personnes %}
+    {% if personne.person_image %}
+    <figure class="col-xl-auto">
+        <a href="{{url_for('person' , idperson=personne.xml_ref_person)}}">
+            <img src="/static/images/{{personne.person_image}}"
+                 class="imgal"
+                 alt="Portrait de {{personne.name_person}}"
+                 height="300">
+            <p class="figure-caption text-center">{{personne.name_person}}</p>
+        </a>
+
+    </figure>
+    {% else %}
+    <figure>
+        <a href="{{url_for('person' , idperson=personne.xml_ref_person)}}">
+            <img src="/static/images/imageNonDisponible.jpeg"
+                 class="imgal"
+                 alt="Portrait de {{personne.name_person}}"
+                 height="300">
+            <p class="figure-caption text-center">{{personne.name_person}}</p>
+    </figure>
+    {% endif %}
+    {% endfor %}
+
+</div>
+
+{% endblock %}

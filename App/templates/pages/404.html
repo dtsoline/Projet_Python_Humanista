@@ -1,0 +1,40 @@
+{% extends "conteneur.html" %}
+{% block corps %}
+
+<body>
+<div class="erreur-global">
+
+    <div>
+        <h1 class="titre_generalerreur">Oups !</h1>
+        <h2 class="sous_titre_generalerreur">Cette page n'existe pas, que faites vous ici ?</h2>
+    </div>
+    <div class="clignote">
+
+
+            <pre> ________________________________________
+< ERREUR 404 >
+<a href="{{ url_for('accueil')}}">&lt; Cliquer ici pour revenir à l&apos;accueil ! &gt;</a>
+ ----------------------------------------
+      \                    / \  //\
+       \    |\___/|      /   \//  \\
+            /0  0  \__  /    //  | \ \
+           /     /  \/_/    //   |  \  \
+           @_^_@&apos;/   \/_   //    |   \   \
+           //_^_/     \/_ //     |    \    \
+        ( //) |        \///      |     \     \
+      ( / /) _|_ /   )  //       |      \     _\
+    ( // /) &apos;/,_ _ _/  ( ; -.    |    _ _\.-~        .-~~~^-.
+  (( / / )) ,-{        _      `-.|.-~-.           .~         `.
+ (( // / ))  &apos;/\      /                 ~-. _ .-~      .-~^-.  \
+ (( /// ))      `.   {            }                   /      \  \
+  (( / ))     .----~-.\        \-&apos;                 .~         \  `. \^-.
+             ///.----..&gt;        \             _ -~             `.  ^-`  ^-_
+                ///-._ _ _ _ _ _ _}^ - - - - ~                     ~-- ,.-~
+                                                                  /.-~
+</pre>
+        <br>
+
+    </div>
+</div>
+</body>
+{% endblock %}

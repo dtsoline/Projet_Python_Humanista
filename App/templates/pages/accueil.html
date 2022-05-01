@@ -1,0 +1,21 @@
+{% extends "conteneur.html" %}
+{% block afternav %}
+
+{%endblock%}
+{% block corps %}
+<body>
+
+
+<h1 class="accueil_bienvenue">Bienvenue !</h1>
+<div>
+    <p>Application Flask réalisée dans le cadre du master TNAH de l'École Nationale des Chartes. Le projet propose une édition électronique d'un échantillon des correspondances humanistes du début du XVe siècle. </p>
+
+    {% if docs %}
+
+    <p>Le fichier XML contenant l'ensemble des correspondances est disponible <a href="{{ url_for('TEI_download')}}">ici</a> et la base de données qui est constituée à partir de ce fichier est disponible <a href="{{ url_for('bdd_download')}}">ici</a> !</p>
+    {% else %}
+    <p>La base de données est en cours de constitution</p>
+    {% endif %}
+</div>
+</body>
+{% endblock %}

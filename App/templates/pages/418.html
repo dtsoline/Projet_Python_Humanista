@@ -1,0 +1,16 @@
+{% extends "conteneur.html" %}
+{% block corps %}
+<style>
+    background-image: url('App/static/images/dw404.jpg');
+</style>
+<div class="erreur-global">
+
+    <div>
+        <h1 class="titre_generalerreur">418 : I'm a teapot !</h1>
+    </div>
+    <div class="titre_generalerreur">
+        <img src="/static/images/teapot_files/{{tpot_pict}}.jpg"
+             height="450">
+
+    </div>
+    {% endblock %}

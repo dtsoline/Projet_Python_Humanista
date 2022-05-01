@@ -1,0 +1,60 @@
+{% extends "conteneur.html" %}
+{% block corps %}
+
+<div>
+    <h1 class="titre_general">Liste des lettres disponibles</h1>
+    <center>
+        <table class="demo" border=1 frame=void rules=rows>
+            <thead>
+            <tr>
+                <th> </th>
+                <th>À ce jour, cet impressionnant corpus de correspondances humanistes se compose de {{docs|length}} lettres. </th>
+                <th> </th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for lettre in docs %}
+            {% set numero = lettre.id %}
+
+            <tr>
+                <td class="sous_titre_general">
+                   Lettre n°{{lettre.id}}
+                </td>
+
+                <td>
+                    {% if lettre.author_ref == None %}
+                    {% if lettre.date %}
+                    {% set dt = lettre.date.split('-') %}
+                    {% set month = dt[1] %}
+                    Lettre adressée à <a href="/pers/{{lettre.dest_ref[1:]}}" class="text-dark"><b>{{lettre.dest_name[2:-2]}}</b></a>, en date du {{ dt[2] }} {{mois[month]}} {{ dt[0] }}.
+
+                    {% else %}
+                    Lettre adressée à <a href="/pers/{{lettre.dest_ref[1:]}}" class="text-dark"><b>{{lettre.dest_name[2:-2]}}</b></a>
+                    {% endif %}
+                    {% else %}
+                    {% if lettre.date %}
+                    {% set dt = lettre.date.split('-') %}
+                    {% set month = dt[1] %}
+
+                    Lettre adressée par <a href="/pers/{{lettre.author_ref[1:]}}" class="text-dark"><b>{{lettre.author_name[2:-2]}}</b></a> à <a href="/pers/{{lettre.dest_ref[1:]}}" class="text-dark"><b>{{lettre.dest_name[2:-2]}}</b></a>, en date du {{ dt[2] }} {{mois[month]}} {{ dt[0] }}.
+
+                    {% else %}
+                    Lettre adressée par <a href="/pers/{{lettre.author_ref[1:]}}" class="text-dark"><b>{{lettre.author_name[2:-2]}}</b></a> à <a href="/pers/{{lettre.dest_ref[1:]}}" class="text-dark"><b>{{lettre.dest_name[2:-2]}}</b></a>
+                    {% endif %}
+                    {% endif %}
+
+
+
+                </td>
+                <td>
+                    <a href="/item/{{lettre.id}}">
+                        <img src="../static/images/logo_lettre.png" height="35"/>
+                    </a>
+                </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

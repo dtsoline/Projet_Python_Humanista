@@ -1,0 +1,59 @@
+{% extends "conteneur.html" %}
+{% block corps %}
+<style>
+    .buttonright {
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    }
+    .buttonleft {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    }
+</style>
+<body>
+<h2 class="titre_general">Lettre numéro {{lettre_ID}}</h2>
+<div>
+    <!-- pas optimal mais le elif ne coopère pas -->
+    {% if lettre_ID == nbrelettre %}
+    <form class="buttonleft">
+        <a href="/item/{{lettre_ID -1}}">
+            <input type="button" value="<<< lettre précédente">
+        </a>
+    </form>
+    {% else %}
+    {% if lettre_ID == 1 %}
+
+    <form class="buttonright">
+        <a href="/item/{{lettre_ID +1}}">
+            <input type="button" value="lettre suivante >>>">
+        </a>
+    </form>
+    {% else %}
+    <form class="buttonleft">
+        <a href="/item/{{lettre_ID -1}}">
+            <input type="button" value="<<< lettre précédente">
+        </a>
+    </form>
+    <form class="buttonright">
+        <a href="/item/{{lettre_ID +1}}">
+            <input type="button"  value="lettre suivante >>>">
+        </a>
+    </form>
+    {% endif %}
+    {% endif %}
+</div>
+<div>
+    <br>
+    <br>
+    {{lettre_txt|safe}}
+
+</div>
+{% if lettre_ID == t_pot %}
+<a href="{{url_for("teapot")}}">
+<img src="../static/images/teapot.gif" height="35"/>
+</a>
+{% endif %}
+</body>
+{% endblock %}

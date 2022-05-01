@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Humanista {%block titre %}{%endblock%}</title>
+    {% include "partials/css.html" %}
+    {% include "partials/css.html" %}
+    {% include "partials/metadata.html" %}
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-white nav-header text-black justify-content-between" role="navigation">
+    <div class="container-fluid">
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item">
+                <a class="navbar-brand" href="{{ url_for('accueil')}}" title="Accueil"><img class="box" src="{{url_for('static', filename='images/erasme_icon.png')}}" width="35" class="d-inline-block align-top" alt="logo"></a>
+            </li>
+
+            <li class="nav-item texte_navbar">
+                <a class="nav-link a-nav text-dark bg-white" href="{{ url_for('index_noms')}}"><i class="fas fa-anchor"></i>Index de personnes</a>
+            </li>
+
+            <li class="nav-item texte_navbar">
+                <a class="nav-link a-nav text-dark bg-white" href="{{ url_for('index_lieu')}}"><i class="fas fa-anchor"></i>Index de lieux</a>
+            </li>
+
+            <li class="nav-item texte_navbar">
+                <a class="nav-link a-nav text-dark bg-white" href="{{ url_for('corpus_entier')}}"><i class="fas fa-anchor"></i>Parcourir les correspondances</a>
+            </li>
+
+            <li class="nav-item texte_navbar">
+                <a class="nav-link a-nav text-dark bg-white" href="{{ url_for('map')}}"><i class="fas fa-anchor"></i>Carte</a>
+            </li>
+
+            <li class="nav-item texte_navbar">
+                <a class="nav-link a-nav text-dark bg-white" href="{{ url_for('galerie')}}"><i class="fas fa-anchor"></i>Galerie</a>
+            </li>
+
+            {% if not current_user.is_authenticated %}
+            <li class="nav-item texte_navbar">
+                <a class="nav-link a-nav text-dark bg-white" href="{{url_for("inscription")}}">Inscription</a>
+            </li>
+            <li class="nav-item texte_navbar">
+                <a class="nav-link a-nav text-dark bg-white" href="{{url_for("connexion")}}">Connexion</a>
+            </li>
+            {% else %}
+            <li class="nav-item texte_navbar">
+                <a class="nav-link a-nav text-dark bg-white" href="{{url_for("deconnexion")}}">Déconnexion ({{current_user.user_nom}})</a>
+            </li>
+            {% endif %}
+            <!--<form class="form-inline">
+                <input class="form-control" type="search" name="keyword" placeholder="Recherche rapide" aria-label="Recherche">
+                <button class="btn btn-outline-info" type="submit">Rechercher</button>
+            </form>-->
+
+        </ul>
+    </div>
+</nav>
+{% block afternav %}{%endblock%}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            {% block corps %}{% endblock %}
+        </div>
+
+    </div>
+    <br>
+    <br>
+</div>
+</body>
+<footer class="text-center text-white fixed-bottom footer-transparent">
+    <div class="text-center p-1" style="background-color: rgba(32, 93, 34, 0.8);">
+        <p style="font-size:11px"><a href="https://github.com/dtsoline" class="text-white">Soline Doat</a>, <a href="http://www.chartes.psl.eu/fr/cursus/master-technologies-numeriques-appliquees-histoire" class="text-white">Master 2 TNAH</a>, Avril 2022</p>
+    </div>
+</footer>
+</html>

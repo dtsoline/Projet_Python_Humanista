@@ -1,0 +1,51 @@
+{% extends "conteneur.html" %}
+{% block corps %}
+<body>
+<div class="container">
+    <div class="row">
+        {% if nomImage != None %}
+        <div class="col-sm-5">
+            <figure>
+                <a href="https://fr.wikipedia.org{{pers_info[4]}}">
+                    <img src="/static/images/{{pers_info[1]}}"
+                         height="300">
+                </a>
+
+            </figure>
+        </div>
+
+        <div class="col-sm-7">
+            <h1 class="titre_general">{{pers_info[0]}}</h1>
+            {% if pers_info[2] == None %}
+            <p class="texte_date texte_index"> Les dates de vie de cette personne ne sont pas disponibles.</p>
+            {% else %}
+            <p class="texte_date">{{pers_info[2]}} - {{pers_info[3]}}</p>
+            {% endif %}
+            {% if desc != 'None' %}
+            <p class="texte_date texte_index"> {{desc}}</p>
+            {% endif %}
+        </div>
+        {% else %}
+
+        <div>
+
+            {% if pers_info[4] != None %}
+            <h1 class="titre_general"><a href="https://fr.wikipedia.org{{pers_info[4]}}">{{pers_info[0]}}</a></h1>
+            {% else %}
+            <h1 class="titre_general">{{pers_info[0]}}</a></h1>
+            {% endif %}
+
+            {% if pers_info[2] == None %}
+            <p class="texte_date texte_index"> Les dates de vie de cette personne ne sont pas disponibles.</p>
+            {% else %}
+            <p class="texte_date">{{pers_info[2]}} - {{pers_info[3]}}</p>
+            {% endif %}
+            {% if desc != 'None' %}
+            <p class="texte_date texte_index"> {{desc}}</p>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+</div>
+</body>
+{% endblock %}
