@@ -106,7 +106,6 @@ def person(idperson):
             pers_info.append(personne.wiki)
             pers_info.append(personne.id_wikidata)
             nomImage = pers_info[1]
-            print(pers_info[3])
             wikidataId=pers_info[5]
             if wikidataId != None :
                 # requete SPARQL pour récupérer une description des personnes
@@ -135,13 +134,9 @@ def person(idperson):
                 """)
                 sparql.setReturnFormat(JSON)
                 results = sparql.query().convert()
-                print(results)
                 desc = results['results']['bindings'][0]['personDesc']['value']
-
             else :
                 desc = 'None'
-
-
         return render_template("pages/item_person.html",
                                personxsl = sortie,
                                idperson = idperson,
