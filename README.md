@@ -16,10 +16,10 @@ Une connexion internet est requise pour le bon fonctionnement de cette applicati
 ## Installation 
 
 
-  * Cloner le dépot Github : ```git clone LIEN ```
+  * Cloner le dépot Github : ```git clone https://github.com/dtsoline/Projet_Python_Humanista ```
   * Vérifier que la version de Python corresponde à Python 3.X : ```python --version```;
   * Lancement de l'environnement virtuel : 
-    * Se placer dans le dossier App : ```cd App/```
+    * Se placer dans le dossier App : ```cd Projet_Python_Humanista /```
     * Installer l'environnement virtuel : ```python3 -m venv [nom environnement virtuel]```
     * Activation de l'environnement virtuel : ```source [nom environnement virtuel]/bin/activate```
   * Installation des librairies et packages nécessaires au bon fonctionnement de l'application : ```pip install -r requirements.txt```
