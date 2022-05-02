@@ -30,7 +30,7 @@ Une connexion internet est requise pour le bon fonctionnement de cette applicati
 
  * Lancement : ```python run.py```
 
- * Se rendre sur ```http://127.0.0.1:5000/```
+ * Se rendre à l'adresse [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
 
  * Pour stopper l'exécution : ```^C```
 
