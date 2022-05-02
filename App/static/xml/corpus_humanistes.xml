@@ -28,7 +28,6 @@
          <projectDesc>
             <p>Cette application est développée dans le cadre des enseignements du Master «
                Technologies numériques appliquées à l'histoire » de l'ENC</p>
-            <p>Explication : les correspondances sont encodées dans un fichier XML-TEI. PUIS....</p>
          </projectDesc>
          <samplingDecl>
             <p>Échantillon de correspondances.</p>
@@ -274,8 +273,6 @@
          </settingDesc>
       </profileDesc>
    </teiHeader>
-
-   <!-- FACSIMILE ??? -->
 
    <text>
       <group>
@@ -692,10 +689,6 @@
 
             </body>
          </text>
-
-
-         <!-- https://archive.org/details/cu31924026502793/page/n351/mode/2up  CHARLES V. TO ERASMUS  -->
-
       </group>
    </text>
 </TEI>
